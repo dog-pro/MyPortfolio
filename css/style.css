@@ -1,11 +1,8 @@
 body {
-  /* font-family: "Montserrat","Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif; */
   font-family: arno-pro, serif;
   font-size: 15px;
   letter-spacing: 0.05em;
-  /* color: #333; */
   color: #fff;
-  /* text-shadow: 0 0 10px #fff,0 0 15px #fff; */
 }
 
 a {
@@ -29,9 +26,6 @@ img {
   display: none;
 }
 
-h3 {
-  margin-top: 40px;
-}
 
 /*--------------------------------
  雪
@@ -89,7 +83,6 @@ h3 {
 }
 
 .section:nth-of-type(odd) {
-  /* background-color: #f7f7f7; */
   background-color: #333;
 }
 
@@ -109,7 +102,6 @@ h3 {
   margin-bottom: 40px;
   text-align: center;
   letter-spacing: 0.05em;
-  /* color: #333; */
   color: #fff;
   text-shadow: 0 0 10px #fff, 0 0 15px #fff;
 }
@@ -128,8 +120,6 @@ h3 {
   top: 0;
   z-index: 1;
   width: 100%;
-  /* background-color: #fff; */
-  /* background-color: #333; */
   box-shadow: 0 5px 10px -6px rgba(0, 0, 0, 0.1);
   background: rgba(0, 0, 0, 0.5); /* 背景色を半透明の黒色に */
 }
@@ -177,7 +167,6 @@ h3 {
   padding: 5px 0;
   transition: 0.3s;
   letter-spacing: 0.05em;
-  /* color: #333; */
   color: #fff;
   text-shadow: 0 0 10px #fff, 0 0 15px #fff;
 }
@@ -191,7 +180,6 @@ h3 {
   transition: 0.3s;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
-  /* background-color: #333; */
   background-color: #fff;
   color: #fff;
   text-shadow: 0 0 10px #fff, 0 0 15px #fff;
@@ -201,16 +189,6 @@ h3 {
   width: 100%;
   animation: flashing 1s ease-in-out infinite alternate;
 }
-
-/* ホバーしたら文字がレインボー */
-/* .gnav-item a:hover{
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-image: -webkit-linear-gradient(left, #f69, #fc0, #3c3, #09f, #96f);
-  background-image: -moz-linear-gradient(left, #f69, #fc0, #3c3, #09f, #96f);
-  background-image: -o-linear-gradient(left, #f69, #fc0, #3c3, #09f, #96f);
-  background-image: -ms-linear-gradient(left, #f69, #fc0, #3c3, #09f, #96f);
-} */
 
 @keyframes flashing {
   0% {
@@ -296,7 +274,7 @@ h3 {
 }
 
 .works-img {
-  overflow: hidden; /* これを記述することではみ出た部分を非表示にします。 */
+  overflow: hidden;
 }
 
 .works-img img {
@@ -309,7 +287,7 @@ h3 {
 }
 
 .movie {
-  overflow: hidden; /* これを記述することではみ出た部分を非表示にします。 */
+  overflow: hidden;
 }
 
 .movie video {
@@ -327,51 +305,42 @@ h3 {
   font-family: arno-pro, serif;
 }
 
-.basecolor_port1 {
+.colorBase{
   margin-left: 5px;
   padding: 3px 6px;
+}
+
+.basecolor_port1 {
   background-color: #ffffff;
   color: #4e4e4e;
 }
 
 .maincolor_port1 {
-  margin-left: 5px;
-  padding: 3px 6px;
   background-color: #90ee90;
   color: #4e4e4e;
 }
 
 .accentcolor_port1 {
-  margin-left: 5px;
-  padding: 3px 6px;
   background-color: #528852;
   color: #ffffff;
 }
 
 .basecolor_port2 {
-  margin-left: 5px;
-  padding: 3px 6px;
   background-color: #f5deb3;
   color: #4e4e4e;
 }
 
 .maincolor_port2 {
-  margin-left: 5px;
-  padding: 3px 6px;
   background-color: #d6be67;
   color: #4e4e4e;
 }
 
 .accentcolor_port2 {
-  margin-left: 5px;
-  padding: 3px 6px;
   background-color: #5b512c;
   color: #ffffff;
 }
 
 .maincolor_logo1 {
-  margin-left: 5px;
-  padding: 3px 6px;
   background-color: #1e72ae;
   color: #ffffff;
 }
@@ -484,7 +453,6 @@ h3 {
 .copyright {
   font-size: 10px;
   text-align: center;
-  /* color: #797979; */
   color: #fff;
   text-shadow: 0 0 10px #fff, 0 0 15px #fff;
 }
@@ -558,6 +526,10 @@ h3 {
 
   .sp-only {
     display: block;
+  }
+
+  h3{
+    margin-top: 0;
   }
 
   /* 見出し */
@@ -702,7 +674,6 @@ h3 {
     margin: 0 auto;
     text-align: center;
     color: #fff;
-    /* background: rgba(0, 0, 0, .5); */
     background-color: #000;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -726,6 +697,8 @@ h3 {
     color: #fff;
     list-style: none;
     text-decoration: none;
+    font-size: 1.5rem;
+    line-height: 2;
   }
 
   /* Works */
@@ -748,7 +721,7 @@ h3 {
 
   .skill-item {
     width: 100%;
-    margin-bottom: 35px;
+    margin-top: 50px;
   }
 
   .skill-item:last-child {
@@ -800,10 +773,6 @@ h3 {
 
   .article-body h3:not(:first-child) {
     margin-top: 30px;
-  }
-
-  .article-body_img {
-    display: flex;
   }
 
   .article-body p {
