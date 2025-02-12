@@ -2,13 +2,14 @@ body {
   font-family: arno-pro, serif;
   font-size: 15px;
   letter-spacing: 0.05em;
-  color: #fff;
+  color: #333;
+
 }
 
 a {
   transition: opacity 0.3s;
   text-decoration: none;
-  color: #1ca9e3;
+  color: #4287ee;
 }
 
 img {
@@ -26,64 +27,29 @@ img {
   display: none;
 }
 
-
-/*--------------------------------
- 雪
----------------------------------*/
-.snow {
-  /*雪の色*/
-  color: snow;
-  /*雪の大きさ*/
-  font-size: 10px;
-  /*初期位置*/
-  position: fixed;
-  top: -5%;
-  /*雪を適当な幅で降らせる*/
-  text-shadow: 5vw -100px 2px, 10vw -400px 3px, 20vw -500px 4px, 30vw -580px 1px,
-    39vw -250px 2px, 42vw -340px 5px, 56vw -150px 2px, 63vw -180px 0,
-    78vw -220px 4px, 86vw -320px 9px, 94vw -170px 7px;
-  /*雪アニメーション1*/
-  animation: roll 5s linear infinite;
-}
-/*2つめの雪アニメーション*/
-.snow2nd {
-  animation: anim 8s linear infinite;
-}
-
-@keyframes roll {
-  0% {
-    transform: rotate(0deg);
-  }
-  90% {
-    opacity: 1;
-  }
-  100% {
-    transform: rotate(20deg);
-    top: 100%;
-    opacity: 0;
-  }
-}
-@keyframes anim {
-  100% {
-    color: transparent;
-    top: 150%;
-  }
-}
-
 /*--------------------------------
  レイアウト
 ---------------------------------*/
 .wrapper {
   padding-top: 73px;
-  background-color: #000;
+  background-color: #95f6f7;
 }
 
 .section {
   padding: 90px 0;
+
+  /* 波 */
+  --mask:
+  radial-gradient(72.11px at 50% 100px,#000 99%,#0000 101%) calc(50% - 80px) 0/160px 51% repeat-x,
+  radial-gradient(72.11px at 50% -60px,#0000 99%,#000 101%) 50% 40px/160px calc(51% - 40px) repeat-x,
+  radial-gradient(72.11px at 50% calc(100% - 100px),#000 99%,#0000 101%) calc(50% - 80px) 100%/160px 51% repeat-x,
+  radial-gradient(72.11px at 50% calc(100% + 60px),#0000 99%,#000 101%) 50% calc(100% - 40px)/160px calc(51% - 40px) repeat-x;
+-webkit-mask: var(--mask);
+        mask: var(--mask);
 }
 
 .section:nth-of-type(odd) {
-  background-color: #333;
+  background-color: #ccf3ff;
 }
 
 .container {
@@ -102,8 +68,8 @@ img {
   margin-bottom: 40px;
   text-align: center;
   letter-spacing: 0.05em;
-  color: #fff;
-  text-shadow: 0 0 10px #fff, 0 0 15px #fff;
+  color: #333;
+  /* text-shadow: 0 0 10px #fff, 0 0 15px #fff; */
 }
 
 .lead {
@@ -121,14 +87,16 @@ img {
   z-index: 1;
   width: 100%;
   box-shadow: 0 5px 10px -6px rgba(0, 0, 0, 0.1);
-  background: rgba(0, 0, 0, 0.5); /* 背景色を半透明の黒色に */
+  /* background: rgba(0, 0, 0, 0.5); */
+  /* 背景色を半透明の黒色に */
+  background-image: linear-gradient(90deg, rgba(65, 164, 253, 0.6), rgba(14, 244, 255, 0.6));
 }
 
 .header .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 40px;
+  padding: 21px 40px;
 }
 
 .header-logo {
@@ -140,8 +108,8 @@ img {
 }
 
 .header-logo a {
-  color: #fff;
-  text-shadow: 0 0 10px #fff, 0 0 15px #fff;
+  color: #333;
+  /* text-shadow: 0 0 10px #fff, 0 0 15px #fff; */
 }
 
 .gnav-list {
@@ -150,8 +118,8 @@ img {
   list-style: none;
 }
 
-.gnav-list li:nth-child(7) {
-  border-left: 1px solid #ccc;
+.gnav-list li:nth-child(6) {
+  border-left: 1px solid #333;
   padding-left: 24px;
 }
 
@@ -167,8 +135,8 @@ img {
   padding: 5px 0;
   transition: 0.3s;
   letter-spacing: 0.05em;
-  color: #fff;
-  text-shadow: 0 0 10px #fff, 0 0 15px #fff;
+  color: #333;
+  /* text-shadow: 0 0 10px #fff, 0 0 15px #fff; */
 }
 .gnav-item a:after {
   position: absolute;
@@ -180,9 +148,9 @@ img {
   transition: 0.3s;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
-  background-color: #fff;
-  color: #fff;
-  text-shadow: 0 0 10px #fff, 0 0 15px #fff;
+  background-color: #333;
+  color: #333;
+  /* text-shadow: 0 0 10px #fff, 0 0 15px #fff; */
 }
 
 .gnav-item a:hover:after {
@@ -212,6 +180,12 @@ img {
   justify-content: center;
   height: 85vh;
   text-align: center;
+  background-image: url(../img/ocean_background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-color: #00ceff; */
+  /* background-image: linear-gradient(90deg, rgba(65, 164, 253, 1), rgba(14, 244, 255, 1)); */
 }
 
 .mv-container {
@@ -225,7 +199,7 @@ img {
   margin-bottom: 5px;
   letter-spacing: 0.1em;
   color: #fff;
-  text-shadow: 0 0 10px #fff, 0 0 15px #fff;
+  text-shadow: 0 0 10px #333, 0 0 15px #333;
 }
 .mv-subtitle {
   font-size: 20px;
@@ -234,13 +208,15 @@ img {
   margin-bottom: 40px;
   letter-spacing: 0.08em;
   color: #fff;
-  text-shadow: 0 0 10px #fff, 0 0 15px #fff;
+  text-shadow: 0 0 10px #333, 0 0 15px #333;
 }
 
 .mv-text {
   font-size: 16px;
   line-height: 1.8;
   font-family: arno-pro, serif;
+  color: #fff;
+  text-shadow: 0 0 10px #333, 0 0 15px #333;
 }
 
 /*--------------------------------
@@ -250,7 +226,7 @@ img {
 .works-list {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: -40px;
+  /* margin-bottom: -40px; */
   text-align: center;
 }
 
@@ -278,11 +254,11 @@ img {
 }
 
 .works-img img {
-  border: 1px solid #e6e6e6;
+  /* border: 1px solid #e6e6e6; */
 }
 
 .works-item:hover .works-img img {
-  transform: scale(1.2, 1.2);
+  transform: scale(1.1, 1.1);
   transition: 0.5s all;
 }
 
@@ -300,9 +276,19 @@ img {
   font-size: 12px;
   font-weight: bold;
   margin: 8px 0 4px;
-  color: #fff;
-  text-shadow: 0 0 10px #fff, 0 0 15px #fff;
+  color: #333;
+  /* text-shadow: 0 0 10px #fff, 0 0 15px #fff; */
   font-family: arno-pro, serif;
+}
+
+.logoImg{
+  margin-top: 2%;
+}
+
+.logo_list{
+  display: flex;
+  margin: 5% 0;
+  list-style: none;
 }
 
 .colorBase{
@@ -439,7 +425,7 @@ img {
 
 .page-top .material-icons-outlined {
   vertical-align: bottom;
-  color: #fff;
+  color: #333;
 }
 
 /*--------------------------------
@@ -447,14 +433,14 @@ img {
 ---------------------------------*/
 .footer {
   padding: 30px;
-  background-color: #333;
+  background-image: linear-gradient(90deg, rgba(65, 164, 253, 1), rgba(14, 244, 255, 1));
 }
 
 .copyright {
   font-size: 10px;
   text-align: center;
-  color: #fff;
-  text-shadow: 0 0 10px #fff, 0 0 15px #fff;
+  color: #333;
+  /* text-shadow: 0 0 10px #fff, 0 0 15px #fff; */
 }
 
 /*--------------------------------
@@ -462,6 +448,7 @@ img {
 ---------------------------------*/
 .article {
   padding: 80px 0;
+  background-color: #ccf3ff;
 }
 
 .article-container {
@@ -511,6 +498,64 @@ img {
 
 .home-link {
   text-align: center;
+}
+
+.banner_pattern{
+display: flex;
+}
+
+.banner_pattern li{
+  list-style: none;
+  margin-right: 2%;
+}
+
+/* モーダル */
+.featherlight-sample {
+  display: none;
+}
+
+.featherlight .featherlight-content {
+  height: 80%;
+  width: 80%;
+}
+
+.featherlight .featherlight-close-icon {
+  top: 0;
+  font-size: 3rem;
+}
+
+.featherlight-sample {
+  font-size: 1.6rem;
+  color: #000;
+}
+
+.inner-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.inner-box02 {
+  width: 60%;
+  margin-left: 2%;
+}
+
+.inner-box02 h3 {
+  display: inline-block;
+  background: linear-gradient(transparent 60%, #4287ee 60%);
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+.inner-box02 p {
+  margin-bottom: 3%;
+  font-size: 15px;
+}
+
+#inner01 img, #inner02 img, #inner03 img, #inner04 img, #inner05 img, #inner6 img, #inner7 img {
+  width: 400px;
+  height: auto;
+  margin-bottom: 5%;
 }
 
 /*media Queries 767
@@ -628,7 +673,7 @@ img {
     width: 100%;
     height: 2px;
     left: 0;
-    background-color: #fff;
+    background-color: #333;
     transition: all 0.5s ease;
   }
 
@@ -673,7 +718,7 @@ img {
     padding: 20px 0;
     margin: 0 auto;
     text-align: center;
-    color: #fff;
+    color: #333;
     background-color: #000;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -694,7 +739,7 @@ img {
   }
 
   .menuSP ul li a {
-    color: #fff;
+    color: #333;
     list-style: none;
     text-decoration: none;
     font-size: 1.4rem;
