@@ -763,6 +763,27 @@ display: flex;
     margin-bottom: 30px;
   }
 
+  .banner_pattern{
+    display: block;
+  }
+
+  .inner-container {
+    display: block;
+    /* justify-content: space-between; */
+    /* align-items: flex-start; */
+  }
+
+  #inner01 img, #inner02 img, #inner03 img, #inner04 img, #inner05 img, #inner6 img, #inner7 img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 5%;
+  }
+
+  .inner-box02 {
+    width: 90%;
+    margin-left: 2%;
+}
+
   /* Skill */
   .skill-list {
     display: block;
