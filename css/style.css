@@ -241,9 +241,9 @@ img {
   color: #333;
 }
 
-.works-item:hover {
+/* .works-item:hover {
   opacity: 0.9;
-}
+} */
 
 .works-item:nth-of-type(3n) {
   margin-right: 0;
@@ -257,7 +257,8 @@ img {
   /* border: 1px solid #e6e6e6; */
 }
 
-.works-item:hover .works-img img {
+.works-img img:hover{
+  opacity: 0.9;
   transform: scale(1.1, 1.1);
   transition: 0.5s all;
 }
