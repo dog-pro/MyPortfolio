@@ -69,7 +69,6 @@ img {
   text-align: center;
   letter-spacing: 0.05em;
   color: #333;
-  /* text-shadow: 0 0 10px #fff, 0 0 15px #fff; */
 }
 
 .lead {
@@ -87,8 +86,6 @@ img {
   z-index: 1;
   width: 100%;
   box-shadow: 0 5px 10px -6px rgba(0, 0, 0, 0.1);
-  /* background: rgba(0, 0, 0, 0.5); */
-  /* 背景色を半透明の黒色に */
   background-image: linear-gradient(90deg, rgba(65, 164, 253, 0.6), rgba(14, 244, 255, 0.6));
 }
 
@@ -109,7 +106,6 @@ img {
 
 .header-logo a {
   color: #333;
-  /* text-shadow: 0 0 10px #fff, 0 0 15px #fff; */
 }
 
 .gnav-list {
@@ -136,7 +132,6 @@ img {
   transition: 0.3s;
   letter-spacing: 0.05em;
   color: #333;
-  /* text-shadow: 0 0 10px #fff, 0 0 15px #fff; */
 }
 .gnav-item a:after {
   position: absolute;
@@ -150,7 +145,6 @@ img {
   transform: translateX(-50%);
   background-color: #333;
   color: #333;
-  /* text-shadow: 0 0 10px #fff, 0 0 15px #fff; */
 }
 
 .gnav-item a:hover:after {
@@ -184,8 +178,6 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  /* background-color: #00ceff; */
-  /* background-image: linear-gradient(90deg, rgba(65, 164, 253, 1), rgba(14, 244, 255, 1)); */
 }
 
 .mv-container {
@@ -226,7 +218,6 @@ img {
 .works-list {
   display: flex;
   flex-wrap: wrap;
-  /* margin-bottom: -40px; */
   text-align: center;
 }
 
@@ -241,20 +232,12 @@ img {
   color: #333;
 }
 
-/* .works-item:hover {
-  opacity: 0.9;
-} */
-
 .works-item:nth-of-type(3n) {
   margin-right: 0;
 }
 
 .works-img {
   overflow: hidden;
-}
-
-.works-img img {
-  /* border: 1px solid #e6e6e6; */
 }
 
 .works-img img:hover{
@@ -278,7 +261,6 @@ img {
   font-weight: bold;
   margin: 8px 0 4px;
   color: #333;
-  /* text-shadow: 0 0 10px #fff, 0 0 15px #fff; */
   font-family: arno-pro, serif;
 }
 
@@ -441,7 +423,6 @@ img {
   font-size: 10px;
   text-align: center;
   color: #333;
-  /* text-shadow: 0 0 10px #fff, 0 0 15px #fff; */
 }
 
 /*--------------------------------
@@ -770,8 +751,6 @@ display: flex;
 
   .inner-container {
     display: block;
-    /* justify-content: space-between; */
-    /* align-items: flex-start; */
   }
 
   #inner01 img, #inner02 img, #inner03 img, #inner04 img, #inner05 img, #inner6 img, #inner7 img {
